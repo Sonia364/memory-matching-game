@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Memory Matching Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Memory Matching Game</h1>
+        <div class="game-wrapper">
+            <div id="leaderboard">
+                <h2>Leaderboard</h2>
+                <ol id="leaderList"></ol>
+            </div>
+            <div class="main-game">
+                <div id="playerInput">
+                    <label for="playerName">Enter your name:</label>
+                    <input type="text" id="playerName" required>
+                    <button id="startButton">Start Game</button>
+                </div>
+                <div class="board" id="gameBoard"></div>
+                <button id="restartButton" disabled>Restart Game</button>
+                <div class="game-info">
+                    <p id="moveCounter"></p>
+                    <p id="timeCounter"></p>
+                </div>
+               
+            </div>
+        </div>
+       
+       
+
+    <script src="main.js"></script>
+</body>
+</html>

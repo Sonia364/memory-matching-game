@@ -1,0 +1,120 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 5px;
+  margin: 20px 25%;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px #d7d7d7;
+  position: relative;
+  perspective: 1000px;
+}
+
+.tile img {
+  width: 80px;
+  height: 80px;
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.tile.flipped {
+  transform: rotateY(180deg);
+}
+
+
+.game-container {
+  width: 100%;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.game-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  background: #f7f7f7;
+}
+
+div#leaderboard {
+  width: 30%;
+  background: #0f0f40;
+  color: #fff;
+  border: 1px dotted #fff;
+}
+
+div#playerInput { 
+  background: #0f0f402e;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-game {
+  width: 70%;
+  position: relative;
+}
+
+button#startButton, button#restartButton {
+  background: #0f0f40;
+    border: 0;
+    color: #fff;
+    width: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 40px;
+}
+
+input#playerName {
+  height: 30px;
+  width: 100%;
+}
+
+label {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+button#restartButton{
+  display: none;
+  width: unset;
+  padding: 10px 20px;
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  background: #0f0f400a;
+  border: 2px dashed #0f0f40;
+  display: none;
+}
+
+p#moveCounter, p#timeCounter {
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #0f0f40;
+  text-shadow: 2px 1px;
+}
