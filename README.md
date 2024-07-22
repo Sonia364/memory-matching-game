@@ -10,6 +10,9 @@
 
 Memory Matching Game is a classic card game developed using HTML, CSS, and JavaScript. Players can test their memory by flipping boxes and finding matching pairs. The game tracks the number of moves and the time taken and includes a leaderboard to display the best scores.
 
+## Live Demo
+View the live game [here](https://sonia364.github.io/memory-matching-game/).
+
 ## Features
 
 - Players are prompted to enter their name before starting the game.
